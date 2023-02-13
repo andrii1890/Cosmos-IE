@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	// "log"
 
-	utils "github.com/node-a-team/Cosmos-IE/utils"
-	terra "github.com/node-a-team/Cosmos-IE/rest/chains/terra"
-	band "github.com/node-a-team/Cosmos-IE/rest/chains/band"
+	utils "github.com/andrii1890/Cosmos-IE/utils"
+	terra "github.com/andrii1890/Cosmos-IE/rest/chains/terra"
+	band "github.com/andrii1890/Cosmos-IE/rest/chains/band"
 )
 
 var (
