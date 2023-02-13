@@ -13,8 +13,9 @@ import (
 //        iov "github.com/node-a-team/Cosmos-IE/chains/iov"
 //        emoney "github.com/node-a-team/Cosmos-IE/chains/emoney"
 //        band "github.com/node-a-team/Cosmos-IE/chains/bandprotocol"
+//        paloma "github.com/node-a-team/Cosmos-IE/chains/paloma"
 
-	exporter "github.com/node-a-team/Cosmos-IE/exporter"
+	exporter "github.com/andrii1890/Cosmos-IE/exporter"
 
 )
 
@@ -24,8 +25,8 @@ var (
 
 	// command로 안 받을 경우 defult 값 지정
 	chain string = ""
-        restAddr string = "localhost:1317"
-	listenPort string = "26661"
+        restAddr string = "localhost:10317"
+	listenPort string = "10661"
 
 	operAddr string= ""
 )
@@ -35,8 +36,8 @@ var runCmd = &cobra.Command{
         Use:   "run",
         Short: "Validator Operator Address",
         Long: `Be sure to enter either Validator Operator Address
-ex#1_Local REST Server) Cosmos-IE run --chain cosmos --oper-addr cosmosvaloper14l0fp639yudfl46zauvv8rkzjgd4u0zk2aseys
-ex#2_Remote REST Server) Cosmos-IE run --chain cosmos --oper-addr cosmosvaloper14l0fp639yudfl46zauvv8rkzjgd4u0zk2aseys --rest-server 192.168.0.10:1317 
+ex#1_Local REST Server) Cosmos-IE run --chain paloma --oper-addr palomavaloper1swa5kcf9cl5dx2ypx0c5r9e5qdfnzp9w0yj7uv
+ex#2_Remote REST Server) Cosmos-IE run --chain paloma --oper-addr palomavaloper1swa5kcf9cl5dx2ypx0c5r9e5qdfnzp9w0yj7uv --rest-server 127.0.0.1:10317 
 `,
         Run: func(cmd *cobra.Command, args []string) {
 		check_chain()
@@ -51,8 +52,8 @@ func init() {
 	runCmd.Flags().StringVarP(&chain, "chain", "c", "", "Chain name of the monitoring node")
         runCmd.MarkFlagRequired("chain")
 
-	runCmd.Flags().StringVarP(&restAddr, "rest-server", "", "localhost:1317", "<host>:<port> to Rest-Server(LCD-Server) interface for the selected chain")
-	runCmd.Flags().StringVarP(&listenPort, "port", "p", "26661", "Port to listen for Prometheus collector connections")
+	runCmd.Flags().StringVarP(&restAddr, "rest-server", "", "localhost:10317", "<host>:<port> to Rest-Server(LCD-Server) interface for the selected chain")
+	runCmd.Flags().StringVarP(&listenPort, "port", "p", "10661", "Port to listen for Prometheus collector connections")
 	runCmd.Flags().StringVarP(&operAddr, "oper-addr", "", "", "Operator address for Validator")
 }
 
