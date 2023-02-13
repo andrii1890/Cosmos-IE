@@ -1,7 +1,7 @@
 package exporter
 
 import (
-	rest "github.com/node-a-team/Cosmos-IE/rest/common"
+	rest "github.com/andrii1890/Cosmos-IE/rest/common"
 )
 
 var (
@@ -141,6 +141,8 @@ func getDenomList(chain string) []string {
 		dList = []string{"uatolo"}
 	case "tgrade":
 		dList = []string{"utgrade"}
+	case "paloma":
+		dList = []string{"ugrain"}
 	}
 
 	return dList
