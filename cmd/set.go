@@ -8,8 +8,9 @@ import (
 //        band "github.com/node-a-team/Cosmos-IE/chains/bandprotocol/getData/rest"
 
 //	  terra "github.com/node-a-team/Cosmos-IE/rest/chains/terra"
+//        paloma "github.com/andrii1890/Cosmos-IE/chains/paloma/getData/rest"
 
-        common "github.com/node-a-team/Cosmos-IE/rest/common"
+        common "github.com/andrii1890/Cosmos-IE/rest/common"
 
 //	rpc_iov "github.com/node-a-team/Cosmos-IE/chains/iov/getData/rpc"
 )
