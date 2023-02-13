@@ -4,7 +4,7 @@ import (
 	"go.uber.org/zap"
 
 	rest "github.com/node-a-team/Cosmos-IE/rest/common"
-	utils "github.com/node-a-team/Cosmos-IE/utils"
+	utils "github.com/andrii1890/Cosmos-IE/utils"
 )
 
 
