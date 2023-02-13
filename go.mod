@@ -1,4 +1,4 @@
-module github.com/node-a-team/Cosmos-IE
+module github.com/andrii1890/Cosmos-IE
 
 go 1.15
 
