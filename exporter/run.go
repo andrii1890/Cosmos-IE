@@ -8,7 +8,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	iris "github.com/irisnet/irishub/address"
-	"github.com/node-a-team/Cosmos-IE/common"
+	"github.com/andrii1890/Cosmos-IE/common"
 
 	terra "github.com/terra-project/core/types"
 	//	kava "github.com/kava-labs/kava/app"
