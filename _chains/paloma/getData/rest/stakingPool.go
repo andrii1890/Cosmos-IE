@@ -5,7 +5,7 @@ import (
 	"go.uber.org/zap"
 	"encoding/json"
 
-	utils "github.com/node-a-team/Cosmos-IE/utils"
+	utils "github.com/andrii1890/Cosmos-IE/utils"
 )
 
 type stakingPool struct {
