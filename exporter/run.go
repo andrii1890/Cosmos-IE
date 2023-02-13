@@ -138,6 +138,17 @@ func setConfig(chain string) {
 		config.SetBech32PrefixForConsensusNode(Bech32PrefixConsAddr, Bech32PrefixConsPub)
 	//	config.SetAddressVerifier(VerifyAddressLen())
 		config.Seal()
+	case "paloma":
+		Bech32MainPrefix := "paloma"
+		Bech32PrefixAccPub := Bech32MainPrefix + "pub"
+		Bech32PrefixValAddr := Bech32MainPrefix + "val" + "oper"
+		Bech32PrefixValPub := Bech32MainPrefix + "val" + "oper" + "pub"
+		Bech32PrefixConsAddr := Bech32MainPrefix + "val" + "cons"
+		Bech32PrefixConsPub := Bech32MainPrefix + "val" + "cons" + "pub"
+		config.SetBech32PrefixForAccount(Bech32MainPrefix, Bech32PrefixAccPub)
+		config.SetBech32PrefixForValidator(Bech32PrefixValAddr, Bech32PrefixValPub)
+		config.SetBech32PrefixForConsensusNode(Bech32PrefixConsAddr, Bech32PrefixConsPub)
+		config.Seal()
 	}
 
 	config.Seal()
